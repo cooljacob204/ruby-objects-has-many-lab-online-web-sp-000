@@ -6,7 +6,7 @@ class Author
   
   def initialize(name)
     @name = name
-    @songs = []
+    @posts = []
   end
   
   def add_song(song)
