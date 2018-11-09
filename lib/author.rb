@@ -11,16 +11,16 @@ class Author
   
   def add_song(song)
     song.artist = self
-    @songs << song
+    @posts << song
   end
   
   def add_song_by_name(name)
     song = Song.new(name)
     song.artist = self
-    @songs << song
+    @posts << song
   end
   
-  def self.song_count
+  def self.post_count
     return Song.all.size
   end
 end
