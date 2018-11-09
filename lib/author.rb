@@ -10,13 +10,13 @@ class Author
   end
   
   def add_song(song)
-    song.artist = self
+    post.artist = self
     @posts << song
   end
   
   def add_song_by_name(name)
-    song = Song.new(name)
-    song.artist = self
+    post = Post.new(name)
+    post.artist = self
     @posts << song
   end
   
