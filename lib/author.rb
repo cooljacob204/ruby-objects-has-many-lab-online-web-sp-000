@@ -9,9 +9,9 @@ class Author
     @posts = []
   end
   
-  def add_song(song)
-    post.artist = self
-    @posts << song
+  def add_song(post)
+    post.author = self
+    @posts << post
   end
   
   def add_song_by_name(name)
